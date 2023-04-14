@@ -1,4 +1,4 @@
-async function getVehicles() {
+const getVehicles = async() => {
     const response = await fetch('https://swapi.dev/api/vehicles/', { method: 'GET' });
     const type = await response.json();
     const vehicles = type.results;
@@ -11,7 +11,7 @@ async function getVehicles() {
     return copyVehicles;
 }
 
-async function newPassengers(){
+const newPassengers = async() => {
     const total = await getVehicles();
     const changePassengers = total.map((vehicle) => ({
         name: vehicle.name, 

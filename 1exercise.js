@@ -1,4 +1,4 @@
-async function people (){
+const people = async() => {
     const info = await fetch('https://swapi.dev/api/people/', { method: 'GET' });
     const data = await info.json();
     const character = data.results;
@@ -11,7 +11,7 @@ async function people (){
     return array;
 }
 
-async function newCharacters() {
+const newCharacters = async() => {
     const infoPeople = await people();
     const filterHeightPersons = infoPeople.filter((person ) =>
      person.height > 170);//map

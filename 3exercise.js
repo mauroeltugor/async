@@ -1,5 +1,4 @@
 import { message } from "./1exercise.js";
-import { done } from "./1exercise.js";
 
 const user = async () => {
     try{
@@ -13,12 +12,9 @@ const user = async () => {
             email: person.email
         }))
         console.log(newUsersData);
-        console.log('===================================================================================================================');
     }catch(err){
         console.log(message);
     }    
 }
 
 user();
-
-/*--------------------------------------------------------------------*/

@@ -1,3 +1,7 @@
+import { message } from "./1exercise.js";
+import { done } from "./1exercise.js";
+
+
 const getVehicles1 = async () => {
 
     const response1 = await fetch('https://swapi.dev/api/vehicles/', { method: 'GET' });

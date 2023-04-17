@@ -1,5 +1,4 @@
 import { message } from "./1exercise.js";
-import { done } from "./1exercise.js";
 
 const getVehicles = async () => {
     try {
@@ -36,5 +35,3 @@ const newPassengers = async () => {
 }
 
 newPassengers();
-
-/*=================================================================================================*/

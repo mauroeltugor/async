@@ -1,3 +1,7 @@
+import { message } from "./1exercise.js";
+import { done } from "./1exercise.js";
+
+
 const user2 = async () => {
     const data2 = await fetch('https://jsonplaceholder.typicode.com/users', { method: 'GET'});
     const info2 = await data2.json();
@@ -9,7 +13,6 @@ const user2 = async () => {
         email: person.email
     }));
     console.log(newUsersData2);
-    console.log('===================================================================================================================');
 
 };
 
